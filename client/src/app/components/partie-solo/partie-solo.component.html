@@ -1,0 +1,23 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+        <mat-label>Nom d'utilisateur</mat-label>
+        <input class="form-control" matInput formControlName="nomUtilisateur" />
+        <mat-hint align="end">Entre 4 et 21 caractères</mat-hint>
+        <mat-error>Le nom d'utilisateur doit contenir entre 4 et 21 caractères</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Delai dans le jeu</mat-label>
+        <input matInput type="number" formControlName="delaiTour" [min]="min" [max]="max" step="0.5" />
+        <span matSuffix>mins</span>
+    </mat-form-field>
+
+    <label id="example-radio-group-label"><h3>Profil du joueur virtuel</h3></label>
+    <mat-radio-group aria-label="Select an option" formControlName="profilJV">
+        <mat-radio-button value="debutant">Débutant</mat-radio-button>
+        <mat-radio-button value="expert" disabled>Expert</mat-radio-button>
+    </mat-radio-group>
+    <button class="btn" mat-raised-button type="submit" color="primary" [disabled]="!profileForm.valid">Initialiser La Partie</button>
+</form>
+
+<hr />

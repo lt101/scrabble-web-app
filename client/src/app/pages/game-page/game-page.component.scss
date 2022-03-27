@@ -1,0 +1,60 @@
+.bouton-abandonner {
+    height: 40px;
+    top: 15px;
+    left: 15px;
+    position: absolute;
+}
+
+.boutons {
+    bottom: 15px;
+    left: 15px;
+    position: absolute;
+}
+.bouton-police {
+    height: 40px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.play-area-container {
+    overflow: auto;
+    flex: 80%;
+    flex-direction: column;
+}
+.tableau {
+    //flex: 75%;
+    margin: auto;
+    overflow: scroll;
+    width: min-content;
+    max-height: 85%;
+}
+.chevalet {
+    flex: 20%;
+    //padding-top: 15px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.bouton-passer-tour {
+    height: 40px;
+    flex: 20%;
+    justify-content: right;
+    display: flex;
+    width: 100%;
+}
+
+.play-area {
+    display: grid;
+    width: min-content;
+    outline: none;
+}
+
+.sidebar-container {
+    flex: 30%;
+}

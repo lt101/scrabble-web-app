@@ -1,0 +1,53 @@
+:root {
+    --joueurActifCouleur: red;
+}
+.joueur-1 {
+    background-color: #0000ff50;
+    height: 25%;
+}
+.joueur-2 {
+    background-color: #ff000050;
+    height: 25%;
+}
+.joueur-actif {
+    color: var(--joueurActifCouleur);
+}
+.nom {
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+}
+.pointage {
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    color: rgb(139, 106, 20);
+    padding: 10px;
+}
+.chevalet {
+    width: 50%;
+    text-align: center;
+}
+.tour {
+    background-color: burlywood;
+    text-align: center;
+    font-size: large;
+    height: 10%;
+    padding-top: 15px;
+}
+.reserve {
+    background-color: burlywood;
+    text-align: center;
+    font-size: large;
+    height: 10%;
+    padding-top: 10px;
+}
+.minuterie {
+    background-color: burlywood;
+    height: 30%;
+    text-align: center;
+    font-size: large;
+    font: 40px Arial, sans-serif;
+    padding-top: 10px;
+}

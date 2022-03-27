@@ -1,0 +1,57 @@
+.boite {
+    width: 100%;
+    border: 4px solid #d0d0d0;
+    background-color: rgb(43, 31, 6);
+    overflow: scroll;
+    text-align: left;
+    position: sticky;
+    bottom: 0;
+    height: 100%;
+}
+.clavardage {
+    display: block;
+    padding: 10px;
+    white-space: pre-line;
+    .message-systeme {
+        width: 60%;
+        word-wrap: break-word;
+        background-color: rgb(194, 187, 187);
+        color: black;
+        padding: 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .message-utilisateur {
+        width: 60%;
+        word-wrap: break-word;
+        background-color: rgb(241, 92, 174);
+        color: black;
+        padding: 10px 10px;
+        border-radius: 10px 10px 1px 0;
+        margin: 10px 0;
+    }
+    .message-adversaire {
+        width: 60%;
+        word-wrap: break-word;
+        background-color: rgb(85, 207, 201);
+        color: black;
+        padding: 10px 10px;
+        border-radius: 10px 10px 0 10px;
+        margin: 5px 0 5px auto;
+    }
+}
+.message-input {
+    width: 45%;
+    background-color: #d0d0d0;
+    position: fixed;
+    bottom: 0;
+    padding: 5px;
+    .formulaire {
+        width: 35%;
+        background-color: white;
+        height: 25px;
+    }
+}
+

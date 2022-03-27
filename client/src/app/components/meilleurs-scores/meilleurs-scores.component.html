@@ -1,0 +1,51 @@
+<div class="container">
+    <table class="styled-table">
+        <caption>
+            <h2>Mode de jeu classique</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let score of scores">
+                <tr>
+                    <td>
+                        <ng-container *ngFor="let nom of score.nom; let i = index">
+                            {{ i === score.nom.length - 1 ? nom : nom + ' - ' }}</ng-container
+                        >
+                    </td>
+                    <td>{{ score.score }}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <table class="styled-table">
+        <caption>
+            <h2>Mode LOG2990</h2>
+        </caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let score of scores">
+                <tr>
+                    <td>
+                        <ng-container *ngFor="let nom of score.nom; let i = index">
+                            {{ i === score.nom.length - 1 ? nom : nom + ' - ' }}</ng-container
+                        >
+                    </td>
+                    <td>{{ score.score }}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

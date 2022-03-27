@@ -1,0 +1,37 @@
+<div class="boite" #clavardage>
+    <div class="clavardage">
+        <div *ngFor="let message of wClavardages">
+            <div *ngIf="message.auteur === 'Sys'">
+                <p class="message-systeme">
+                    {{ message.message }}
+                </p>
+            </div>
+
+            <div *ngIf="message.auteur === utilisateur && message.auteur !== 'Sys'">
+                <p class="message-utilisateur">
+                    <strong> {{ message.auteur }} : </strong>
+                    {{ message.message }}
+                </p>
+            </div>
+
+            <div *ngIf="message.auteur !== utilisateur && message.auteur !== 'Sys'">
+                <p class="message-adversaire">
+                    <strong> {{ message.auteur }} : </strong>
+                    {{ message.message }}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="message-input">
+        <input class="formulaire" #entree
+            type="text"
+            placeholder="Entrez un message ou une commande"
+            required
+            [(ngModel)]="message"
+            message="message"
+            (keyup.enter)="toucheEnterPresser($event)"
+            #envoieMessage
+        />
+        <button (click)="envoyerMessage()">Envoyer</button>
+    </div>
+</div>

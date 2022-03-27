@@ -1,0 +1,25 @@
+<div class="container">
+    <button class="bouton-abandonner" mat-stroked-button color="primary" routerLink="/home">Abandonner</button>
+    <div class="boutons">
+        Ajustez la taille de la police :
+        <div>
+            <button class="bouton-police" mat-stroked-button color="primary" (click)="changerPolice('+')">+</button>
+            <button class="bouton-police" mat-stroked-button color="primary" (click)="changerPolice('-')">-</button>
+        </div>
+    </div>
+    <section class="play-area-container">
+        <div class="tableau">
+            <app-play-area id="app-play-area" class="play-area" tabindex="0" (focusout)="focusOut($event)"></app-play-area>
+        </div>
+        <div class="chevalet">
+            <app-chavalet id="app-chevalet"></app-chavalet>
+        </div>
+        <div class="bouton-passer-tour">
+            <button id="bouton-jouer" class="bouton-police" mat-stroked-button color="warn" (click)="envoyerPlacement()">JOUER</button>
+            <button class="bouton-police" mat-stroked-button color="warn" (click)="passerTour()">PASSER TOUR</button>
+        </div>
+    </section>
+    <section class="sidebar-container">
+        <app-sidebar></app-sidebar>
+    </section>
+</div>

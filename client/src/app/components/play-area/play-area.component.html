@@ -1,0 +1,19 @@
+<div id="grid-container" #gridContainer>
+    <div class="chiffre" *ngFor="let chiffre of positions.horizontal" id="{{ 'Id' + chiffre }}">
+        {{ chiffre }}
+    </div>
+    <canvas id="canvas" #gridCanvas (click)="cliqueSouris($event)" [attr.width]="width" [attr.height]="height"></canvas>
+    <ng-container *ngFor="let colonne of estVisible; let indexColonne = index">
+        <ng-container *ngFor="let rangee of colonne; let indexRangee = index">
+            <div #tuile class="tuile" id="{{ 'Id' + 'C' + indexColonne + 'R' + indexRangee }}">
+                <div class="valeur"></div>
+                <div class="pointage"></div>
+            </div>
+        </ng-container>
+    </ng-container>
+
+    <!-- Afficher toutes les cases, les mettres hidden, et les reveler lorsqu'une lettre est placée dessus -->
+    <div class="lettre" *ngFor="let lettre of positions.vertical" id="{{ 'Id' + lettre }}">
+        {{ lettre }}
+    </div>
+</div>

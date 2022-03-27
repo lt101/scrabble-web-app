@@ -1,0 +1,40 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+        <mat-label>Votre Prénom</mat-label>
+        <input matInput formControlName="firstName" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Selectionner le dictionnaire </mat-label>
+        <mat-select [formControl]="dictionnaireControle" name="dict">
+            <mat-option *ngFor="let dic of dictionnaires" [value]="dic.name">{{ dic.name }}</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Description dictionnaire</mat-label>
+        <textarea matInput formControlName="descriptionDictionnaire"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Delai dans le jeu</mat-label>
+        <input matInput type="number" placeholder="Ex. 12" formControlName="delaiTour" [min]="min" [max]="max" step="0.5" />
+        <span matSuffix>mins</span>
+    </mat-form-field>
+
+    <label id="example-radio-group-label"><h3>Profil du joueur virtuel</h3></label>
+    <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="debutant">Débutant</mat-radio-button>
+        <mat-radio-button value="expert">Expert</mat-radio-button>
+    </mat-radio-group>
+
+    <mat-card-actions>
+        <button mat-raised-button type="submit" color="primary" [disabled]="!profileForm.valid">Creer Partie</button>
+    </mat-card-actions>
+</form>
+
+<hr />
+
+<p>Form Value: {{ profileForm.value | json }}</p>
+
+<p>Form Status: {{ profileForm.status }}</p>

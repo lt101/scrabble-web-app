@@ -1,0 +1,17 @@
+<div class="container justified">
+    <img src="https://bit.ly/3m206ss" width="400" height="80" alt="Logo Scrabble" routerLink="/home" />
+    <div class="example-button-row">
+        <button class="example-button-row-b" mat-stroked-button color="primary" (click)="onChange(0)" routerLink="/solo">
+            jouer une partie en solo
+        </button>
+        <mat-divider></mat-divider>
+        <button class="example-button-row-b" mat-stroked-button color="accent" (click)="onChange(1)" routerLink="/solo" disabled>
+            créer une partie multijoueur
+        </button>
+        <mat-divider></mat-divider>
+
+        <button class="example-button-row-b" mat-stroked-button color="warn" (click)="onChange(2)" routerLink="/scores" disabled>
+            joindre une partie multijoueur
+        </button>
+    </div>
+</div>

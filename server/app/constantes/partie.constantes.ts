@@ -1,0 +1,14 @@
+export const TOUR_MAX = 6;
+export const REMISE_SUR_100 = 100;
+export const PASSER_TOUR_PROB = 10; // 10% de chance
+export const ECHANGER_PROB = 20; // 10% de chance
+export const PLACER_PROB = 100; // 80% de chance
+export const SCORE_6 = 6;
+export const SCORE_7 = 7;
+export const SCORE_12 = 12;
+export const SCORE_13 = 13;
+export const SCORE_18 = 18;
+export const PROB_0_6_PTS = 0.4; // 40% de chance
+export const PROB_7_12_PTS = 0.7; // 30% de chance
+export const PROB_13_18_PTS = 1; // 30% de chance
+export const NOMS = ['Scorpion', 'Sub Zero', 'Raiden'];

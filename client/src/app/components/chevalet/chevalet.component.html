@@ -1,0 +1,17 @@
+<div class="actions" tabindex="0" (focusout)="focusOut($event)">
+    <div id="chevalet">
+        <div
+            class="lettre"
+            #lettre
+            *ngFor="let lettre of nLettres"
+            (click)="selectionnerManip(lettre)"
+            (contextmenu)="selectionnerEchange($event, lettre)"
+            id="{{ 'chevalet' + lettre }}"
+            [ngClass]="{ surlignerManip: estSelectManip(lettre), surlignerEchange: estSelectionEchange(lettre) }"
+        >
+            <div class="valeur"></div>
+            <div class="pointage"></div>
+        </div>
+    </div>
+    <app-bouton-echange></app-bouton-echange>
+</div>

@@ -1,0 +1,26 @@
+<div class="joueur-1">
+    <div class="nom">
+        <strong *ngIf="utilisateur">
+            {{ utilisateur.nom }}
+        </strong>
+    </div>
+    <div *ngIf="utilisateur" class="pointage">{{ utilisateur.pointage }} pts</div>
+    <span *ngIf="utilisateur && utilisateur.chevalet.taille < 7" class="chevalet">{{ utilisateur.chevalet.taille }} lettres</span>
+</div>
+<div class="joueur-2">
+    <div class="nom">
+        <strong *ngIf="adversaire">
+            {{ adversaire.nom }}
+        </strong>
+    </div>
+    <div *ngIf="adversaire" class="pointage">{{ adversaire.pointage }} pts</div>
+    <span *ngIf="adversaire && adversaire.chevalet.taille < 7" class="chevalet">{{ adversaire.chevalet.taille }} lettres</span>
+</div>
+<div class="tour">
+    Tour à
+    <span class="joueur-actif">
+        {{ joueurActif }}
+    </span>
+</div>
+<div class="reserve">Réserve : {{ reserve }} lettres</div>
+<div class="minuterie">{{ temps | minuterie }}</div>

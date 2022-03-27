@@ -1,0 +1,23 @@
+<div class="boutons">
+    <button
+        id="bouton-echange"
+        class="bouton"
+        mat-stroked-button
+        color="warn"
+        [style.visibility]="boutonActif() ? 'visible' : 'hidden'"
+        [disabled]="!boutonActif()"
+        (click)="echanger()"
+    >
+        ECHANGER
+    </button>
+    <button
+        class="bouton"
+        mat-stroked-button
+        color="warn"
+        [style.visibility]="boutonActif() ? 'visible' : 'hidden'"
+        [disabled]="!boutonActif()"
+        (click)="annulerEchange()"
+    >
+        ANNULER
+    </button>
+</div>

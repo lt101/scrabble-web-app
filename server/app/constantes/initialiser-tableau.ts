@@ -1,0 +1,70 @@
+import { Case } from '@app/classes/case';
+
+export const initialiserBonus = (tableau2D: Case[][]): Case[][] => {
+    tableau2D[1][1].bonusMot = 2;
+    tableau2D[2][2].bonusMot = 2;
+    tableau2D[3][3].bonusMot = 2;
+    tableau2D[4][4].bonusMot = 2;
+    tableau2D[7][7].bonusMot = 2;
+    tableau2D[13][1].bonusMot = 2;
+    tableau2D[12][2].bonusMot = 2;
+    tableau2D[11][3].bonusMot = 2;
+    tableau2D[10][4].bonusMot = 2;
+    tableau2D[1][13].bonusMot = 2;
+    tableau2D[2][12].bonusMot = 2;
+    tableau2D[3][11].bonusMot = 2;
+    tableau2D[4][10].bonusMot = 2;
+    tableau2D[13][13].bonusMot = 2;
+    tableau2D[12][12].bonusMot = 2;
+    tableau2D[11][11].bonusMot = 2;
+    tableau2D[10][10].bonusMot = 2;
+
+    tableau2D[0][0].bonusMot = 3;
+    tableau2D[7][0].bonusMot = 3;
+    tableau2D[14][0].bonusMot = 3;
+    tableau2D[0][7].bonusMot = 3;
+    tableau2D[14][7].bonusMot = 3;
+    tableau2D[0][14].bonusMot = 3;
+    tableau2D[7][14].bonusMot = 3;
+    tableau2D[14][14].bonusMot = 3;
+
+    tableau2D[3][0].bonusLettre = 2;
+    tableau2D[11][0].bonusLettre = 2;
+    tableau2D[6][2].bonusLettre = 2;
+    tableau2D[8][2].bonusLettre = 2;
+    tableau2D[0][3].bonusLettre = 2;
+    tableau2D[7][3].bonusLettre = 2;
+    tableau2D[14][3].bonusLettre = 2;
+    tableau2D[2][6].bonusLettre = 2;
+    tableau2D[6][6].bonusLettre = 2;
+    tableau2D[8][6].bonusLettre = 2;
+    tableau2D[12][6].bonusLettre = 2;
+    tableau2D[3][7].bonusLettre = 2;
+    tableau2D[11][7].bonusLettre = 2;
+    tableau2D[2][8].bonusLettre = 2;
+    tableau2D[6][8].bonusLettre = 2;
+    tableau2D[8][8].bonusLettre = 2;
+    tableau2D[12][8].bonusLettre = 2;
+    tableau2D[0][11].bonusLettre = 2;
+    tableau2D[7][11].bonusLettre = 2;
+    tableau2D[14][11].bonusLettre = 2;
+    tableau2D[6][12].bonusLettre = 2;
+    tableau2D[8][12].bonusLettre = 2;
+    tableau2D[3][14].bonusLettre = 2;
+    tableau2D[11][14].bonusLettre = 2;
+
+    tableau2D[5][1].bonusLettre = 3;
+    tableau2D[9][1].bonusLettre = 3;
+    tableau2D[1][5].bonusLettre = 3;
+    tableau2D[5][5].bonusLettre = 3;
+    tableau2D[9][5].bonusLettre = 3;
+    tableau2D[13][5].bonusLettre = 3;
+    tableau2D[1][9].bonusLettre = 3;
+    tableau2D[5][9].bonusLettre = 3;
+    tableau2D[9][9].bonusLettre = 3;
+    tableau2D[13][9].bonusLettre = 3;
+    tableau2D[5][13].bonusLettre = 3;
+    tableau2D[9][13].bonusLettre = 3;
+
+    return tableau2D;
+};
