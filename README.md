@@ -3,6 +3,7 @@
 ## About
 This is a web app version of the popular board game Scrabble created in the context of an academic project. The application is made with Angular and written in Typescript. It implements Socket.io for client-server communication. 
 The current version allows only a single player mode. It is made for a local environnement (see Client and Server sections) and has no data persistance. 
+![scrabble screenshot](https://github.com/lt101/scrabble-web-app/blob/main/scrabble%20picture.png)
 
 ## How To Use
 Before running the application, run the `npm ci` script in the client and server folders to install necessary dependencies.
